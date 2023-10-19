@@ -25,6 +25,7 @@ public class CacheMonitoringController {
 
     private final CacheManager cacheManager;
 
+    // http://localhost:8080/cache-monitoring/getCacheNames
     @GetMapping(value = "/getCacheNames", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> getCacheNames() {
         log.info("getCacheNames");
@@ -33,6 +34,7 @@ public class CacheMonitoringController {
                 .body(cacheNames);
     }
 
+    // http://localhost:8080/cache-monitoring/getAllKeyAndValue
     @GetMapping(value = "/getAllKeyAndValue", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> getAllKeyAndValue() {
         log.info("getAllKeyAndValue");
@@ -58,6 +60,7 @@ public class CacheMonitoringController {
 //                }));
     }
 
+    // http://localhost:8080/cache-monitoring/getCacheStats
     @GetMapping(value = "/getCacheStats", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> getCacheStats() {
         log.info("getCacheStats");
