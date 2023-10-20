@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Loading 예제</title>
+  <link rel="stylesheet" href="/lazyload.css">
+</head>
+
+<!--<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">-->
+<!--<body oncontextmenu="return false" ondragstart="return false">-->
+<body>
+<section>
+  <div>
+    <div>
+      <div><h3>많은 사람들이
+        야나두를 찾는
+        이유를 아시나요?</h3>
+        <p>아무도 흉내 낼 수 없는 수년간의
+          노하우로 야나두가 만들면 1등입니다.</p></div>
+    </div>
+    <div>
+      <ul>
+        <li><img src="https://www.yanadoo.co.kr/static/media/img_star_medal.7ef8c54c.png" alt=""><strong>서비스 만족도
+          1위</strong>
+          <p>2017년- 온라인 영어
+            5개 부문</p></li>
+        <li><img src="https://www.yanadoo.co.kr/static/media/img_trophy.af87f12f.png" alt=""><strong>매출 1위</strong>
+          <p>2018 위메프 티몬
+            홈쇼핑 온라인 영어 부문</p></li>
+      </ul>
+      <ul>
+        <li><img src="https://www.yanadoo.co.kr/static/media/img_gold_medal.d6d65cdb.png" alt=""><strong>올해의 브랜드
+          대상</strong>
+          <p>2022년 올해의 영어 회화 부문
+            (4년 연속)</p></li>
+        <li><img src="https://www.yanadoo.co.kr/static/media/img_first_medal.8611756e.png" alt=""><strong>검색 1위</strong>
+          <p>2018-2020년
+            온라인 영어 부문</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section>
+  <h1>Lazy Loading 샘플</h1>
+
+  <p>
+    스크롤을 내려서 아래 이미지들을 확인하세요. 이 이미지들은 페이지 로드 시 바로 불러와지지 않습니다.
+    사용자가 이미지 근처로 스크롤하면 이미지가 로드됩니다.
+  </p>
+  <img src="https://www.yanadoo.co.kr/static/media/img_star_medal.7ef8c54c.png" alt="로딩 이미지">
+  <!-- lazy loading을 사용하는 이미지 -->
+  <p style="height: 1000px;">여기서 스크롤을 시작하세요1.</p>
+  <img src="https://english.yanadoocdn.com/upload/yanadoo/new/mainSlide/img_pc_main_slide01.png" loading="lazy"
+       alt="지연 로딩 이미지 1">
+  <!-- 여러 개의 더미 텍스트를 삽입하여 페이지를 길게 만듭니다. -->
+  <p style="height: 1000px;">여기서 스크롤을 시작하세요2.</p>
+  <img src="https://english.yanadoocdn.com/upload/yanadoo/new/mainSlide/img_pc_main_slide02.png" loading="lazy"
+       alt="지연 로딩 이미지 2">
+  <p style="height: 1000px;">여기서 스크롤을 시작하세요3.</p>
+  <img src="https://english.yanadoocdn.com/upload/yanadoo/new/mainSlide/img_pc_main_slide03.png" loading="lazy"
+       alt="지연 로딩 이미지 3">
+  <p style="height: 1000px;">여기서 스크롤을 시작하세요4.</p>
+  <img src="https://english.yanadoocdn.com/upload/yanadoo/new/mainSlide/img_pc_main_slide04.png" loading="lazy"
+       alt="지연 로딩 이미지 4">
+  <p style="height: 1000px;">여기서 스크롤을 시작하세요5.</p>
+  <img src="https://english.yanadoocdn.com/upload/yanadoo/new/mainSlide/img_pc_main_slide05.png" loading="lazy"
+       alt="지연 로딩 이미지 5">
+</section>
+</body>
+
+</html>
